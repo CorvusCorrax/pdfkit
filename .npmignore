@@ -1,8 +1,8 @@
 node-zlib/
 node-modules/
 demo/
-src/
-lib/
+// src/
+// lib/
 docs/
 playground/
-index.js
+// index.js
