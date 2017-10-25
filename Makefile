@@ -3,8 +3,8 @@
 js:
 	current="$PWD"
 	while [[ $PWD != / ]] ; do
-    		[ -e .bin/coffee ] && break
-    		cd ..
+		[ -e .bin/coffee ] && break
+		cd ..
 	done
 	bin="$PWD"
 	cd $current
