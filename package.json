@@ -40,9 +40,7 @@
     "coffee-script": ">=1.0.1"
   },
   "scripts": {
-    "prepublish": "make js",
-    "postpublish": "make clean",
-    "postinstall": "make js"
+    "postinstall": "sh build-js.sh"
   },
   "main": "js/document",
   "browserify": {

@@ -1,14 +1,7 @@
 .PHONY: js
 
 js:
-	current="$PWD"
-	while [[ $PWD != / ]] ; do
-		[ -e .bin/coffee ] && break
-		cd ..
-	done
-	bin="$PWD"
-	cd $current
-	$bin/.bin/coffee -o js -c lib/
+	./node_modules/.bin/coffee -o js -c lib/
 	cp -r lib/font/data js/font/data
 
 browser: lib/**/*.coffee
