@@ -1,5 +1,6 @@
 #!/bin/bash
-current="$PWD"
+current=$(dirname "$PWD/$0")
+cd $current
 while [[ $PWD != / ]];do
 	[ -e .bin/coffee ] && break
 	cd ..
